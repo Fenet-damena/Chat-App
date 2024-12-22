@@ -1,6 +1,9 @@
 const App = () => {
-  console.log('App is rendering');
-  return <div className='container'>App</div>;
+  return (
+    <div className="container">
+  
+    </div>
+  );
 };
 
 export default App;
