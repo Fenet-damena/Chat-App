@@ -2,6 +2,7 @@
 
     flex: 1;
     overflow: scroll;
+    scrollbar-width: none;
     .search{
         display: flex;
         align-items: center;
