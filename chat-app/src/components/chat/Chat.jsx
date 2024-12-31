@@ -1,7 +1,7 @@
 import "./chat.css"
 const Chat = () => {
     return (
-        <div className=''>chat</div>
+        <div className='chat'>chat</div>
     )
 }
 export default Chat
