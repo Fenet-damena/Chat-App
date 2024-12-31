@@ -12,6 +12,34 @@ const CL = () => {
            <img src={addMode ?  "./minus.png":"./plus.png" }alt="" className="add"
            onClick={() => setAddMode((pre) => !pre)}/>
         </div>
+        <div className="items">
+            <img src="./avatar.png" alt="" />
+            <div className="texts">
+                <span>lala fenet</span>
+                <p>selam</p>
+            </div>
+        </div>
+        <div className="items">
+            <img src="./avatar.png" alt="" />
+            <div className="texts">
+                <span>lala fenet</span>
+                <p>selam</p>
+            </div>
+        </div>
+        <div className="items">
+            <img src="./avatar.png" alt="" />
+            <div className="texts">
+                <span>lala fenet</span>
+                <p>selam</p>
+            </div>
+        </div>
+        <div className="items">
+            <img src="./avatar.png" alt="" />
+            <div className="texts">
+                <span>lala fenet</span>
+                <p>selam</p>
+            </div>
+        </div>
             </div>
           
     );
