@@ -1,5 +1,20 @@
+import { useState } from "react"
 import "./login.css"
 const Login = () => {
+    const  [avatar,setAvatar] = useState({
+        file:null,
+        url:""
+    })
+    const handleAvatar = e =>{
+        if(e.targate.file[0]){
+            setAvatar({
+                file:e.targate.file[0],
+                url: URL.createObjectURL(e.target.file[0])
+            })
+
+        }
+     
+    }
     return (
         <div className="login">
             <div className="item">
@@ -14,8 +29,10 @@ const Login = () => {
             <div className="item">
             <h2>Create an Account</h2>
                 <form >
-                    <label htmlFor="file">Upload an image</label>
-                    <input type="file" id="file" style={{display:"none"}}/>
+                    <label htmlFor="file">
+                        <img src={avatar.url || "./avatar.png"} alt="" />
+                        Upload an image</label>
+                    <input type="file" id="file" style={{display:"none"}} onChange={handleAvatar}/>
                     <input type="text" placeholder="Username" name="username"/>
                     <input type="text" placeholder="Email" name="email"/>
                     <input type="password" placeholder="Password" name="password"/>
