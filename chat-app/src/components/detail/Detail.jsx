@@ -58,13 +58,6 @@ const Detail = () => {
                             </div>
                             
                             <img src="./download.png" alt="" className="icons" />
-                        </div>      <div className="photoItem">
-                            <div className="photoDetail">
-                            <img src="https://th.bing.com/th/id/R.f564cc8589f68be4690adc7a35f36da0?rik=%2b3PPs5qdMVpHhg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f03%2fSunset-wallpaper-desktop.jpg&ehk=9v%2b%2fyX708Qq6bSvK8rs5oqPPFk0wCOBUq%2fCpW6ELKcA%3d&risl=1&pid=ImgRaw&r=0" alt="" />
-                            <span>Photo_2025_3.png</span>
-                            </div>
-                            
-                            <img src="./download.png" alt="" className="icons" />
                         </div>
                         
                     </div>
