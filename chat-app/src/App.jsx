@@ -12,13 +12,10 @@ const App = () => {
         <List/>
         <Chat/>
         <Detail/>
-        <Notification/>
-
         </>
       ):(
-        <Login />
+        <Login/>
       )}
-      
       
     </div>
   )
