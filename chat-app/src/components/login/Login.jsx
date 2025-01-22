@@ -2,12 +2,15 @@ import { useState } from "react"
 import "./login.css"
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../lib/firebase";
 const Login = () => {
     const  [avatar,setAvatar] = useState({
         file:null,
         url:""
     })
+
+    
     const handleAvatar = e =>{
         if(e.targate.file[0]){
             setAvatar({
@@ -19,7 +22,20 @@ const Login = () => {
      
     }
 
-   
+    const handleRegister = async (e) =>{
+        e.preventDefault()
+        const formData = new FormData(e.target);
+        const { username, email, password } = Object.fromEntries(formData)
+        try{
+
+            const res = await createUserWithEmailAndPassword(auth,email,password)
+
+        }catch(err){
+            console.log(err)
+            toast.error(err.message)
+        }
+        
+    };
 
     const handleLogin = e =>{
         e.preventDefault()
