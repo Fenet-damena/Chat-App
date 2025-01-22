@@ -41,7 +41,7 @@ const CL = () => {
                 <p>selam</p>
             </div>
         </div>
-        <AddUser/>
+        {addMode && <AddUser/>}
             </div>
           
     );
