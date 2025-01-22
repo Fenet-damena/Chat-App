@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./cL.css"
+import AddUser from "./addUser/AddUser";
 const CL = () => {
     const [addMode,setAddMode]= useState(false)
     return (
@@ -40,6 +41,7 @@ const CL = () => {
                 <p>selam</p>
             </div>
         </div>
+        <AddUser/>
             </div>
           
     );
